@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+input{
+    --webkit-apprearance: none;
+    appearance: none;
+    margin: 0;
+    padding: 2rem 5rem;
+    border-radius: 3rem;
+    background-color: #757575;
+    position: relative;
+    border: 1px solid gray;
+}
+
+input::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 2rem 2rem;
+    border-radius: 50%;
+    ;
+}
+
+input:checked::before{
+    left: 60%;
+}
+
+
+input:checked{
+    background-color: chartreuse;
+}
